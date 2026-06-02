@@ -134,26 +134,3 @@ This usually means one of the following:
 
 The total depends on quantity detection. If Curiosa renders quantity in a new layout, the scanner may need to be adjusted.
 
-## Development
-
-After editing the extension files:
-
-1. Go to `chrome://extensions` or `edge://extensions`.
-2. Find **Sorcery Curiosa Price Helper**.
-3. Click the reload icon.
-4. Refresh the Curiosa deck page.
-
-For debugging, open DevTools on the Curiosa page and inspect the Console.
-
-## Possible Future Improvements
-
-- Exact set/finish matching
-- Foil/non-foil toggle
-- Export decklist with prices
-- Show total by card type or Curiosa section
-- Add options page for custom color tiers
-- Add support for additional Sorcery deckbuilding sites
-
-## License
-
-MIT License is recommended if you want other people to freely use, modify, and contribute to this project.
