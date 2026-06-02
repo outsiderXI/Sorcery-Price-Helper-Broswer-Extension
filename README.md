@@ -45,26 +45,28 @@ This extension is currently installed as an unpacked developer extension.
 ### Chrome
 
 1. Download or clone this repository.
-2. Open Chrome.
-3. Go to `chrome://extensions`.
-4. Turn on **Developer mode** in the top-right corner.
-5. Click **Load unpacked**.
-6. Select the folder that contains `manifest.json`.
-7. Open a Curiosa deck page, such as:
-
-```text
-https://curiosa.io/decks/{deck_id}
-```
+2. Unzip the downloaded zip file.
+3. Open Chrome.
+4. Go to `chrome://extensions`.
+5. Turn on **Developer mode** in the top-right corner.
+6. Click **Load unpacked**.
+7. Select the folder that contains `manifest.json`.
+8. Navigate to https://curiosa.io/decks
+9. Click on a deck to view the decklist.
+10. The prices should appear next to the cards.
 
 ### Microsoft Edge
 
 1. Download or clone this repository.
-2. Open Edge.
-3. Go to `edge://extensions`.
-4. Turn on **Developer mode**.
-5. Click **Load unpacked**.
-6. Select the folder that contains `manifest.json`.
-7. Open a Curiosa deck page.
+2. Unzip the downloaded zip file.
+3. Open Edge.
+4. Go to `edge://extensions`.
+5. Turn on **Developer mode**.
+6. Click **Load unpacked**.
+7. Select the folder that contains `manifest.json`.
+8. Navigate to https://curiosa.io/decks
+9. Click on a deck to view the decklist.
+10. The prices should appear next to the cards.
 
 ## How It Works
 
