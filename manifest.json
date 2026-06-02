@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Sorcery Curiosa Price Helper",
+  "version": "0.6.0",
+  "description": "Adds Sorcery card prices to Curiosa deck pages without a backend server.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://curiosa.io/decks/*",
+    "https://api.dotgg.gg/*",
+    "https://butterfly.dotgg.gg/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://curiosa.io/decks/*"
+      ],
+      "js": [
+        "content_curiosa.js"
+      ],
+      "css": [
+        "content_curiosa.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Sorcery Curiosa Price Helper",
+    "default_popup": "popup.html"
+  }
+}

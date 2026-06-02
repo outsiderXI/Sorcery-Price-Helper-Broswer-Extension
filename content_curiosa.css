@@ -1,0 +1,111 @@
+.scr-price-badge[data-sorcery-price-helper] {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
+}
+
+.scr-price-badge[data-price-tier="under-5"] {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(0, 0, 0, 0.18);
+  color: #111111;
+}
+
+.scr-price-badge[data-price-tier="5-10"] {
+  background: rgba(28, 151, 78, 0.96);
+  border-color: rgba(164, 255, 196, 0.38);
+  color: #ffffff;
+}
+
+.scr-price-badge[data-price-tier="10-20"] {
+  background: rgba(42, 113, 213, 0.96);
+  border-color: rgba(171, 210, 255, 0.38);
+  color: #ffffff;
+}
+
+.scr-price-badge[data-price-tier="20-50"] {
+  background: rgba(132, 70, 201, 0.96);
+  border-color: rgba(221, 190, 255, 0.42);
+  color: #ffffff;
+}
+
+.scr-price-badge[data-price-tier="over-50"] {
+  background: rgba(230, 126, 34, 0.98);
+  border-color: rgba(255, 214, 153, 0.45);
+  color: #ffffff;
+}
+
+.scr-price-badge[data-price-tier="missing"],
+.scr-price-badge[data-status="missing"] {
+  background: rgba(204, 42, 42, 0.98);
+  border-color: rgba(255, 184, 184, 0.42);
+  color: #ffffff;
+}
+
+.scr-price-total-box[data-sorcery-price-helper],
+.scr-price-status-box[data-sorcery-price-helper] {
+  position: fixed;
+  z-index: 2147483647;
+  right: 16px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f6f2e9;
+  background: rgba(20, 18, 16, 0.92);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+}
+
+.scr-price-total-box[data-sorcery-price-helper] {
+  bottom: 16px;
+  min-width: 190px;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+.scr-price-total-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+  margin-bottom: 2px;
+}
+
+.scr-price-total-value {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.scr-price-total-meta {
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.scr-price-status-box[data-sorcery-price-helper] {
+  bottom: 104px;
+  max-width: 320px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.35;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.scr-price-status-box[data-hidden="1"] {
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+}
